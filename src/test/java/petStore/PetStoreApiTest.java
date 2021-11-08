@@ -13,7 +13,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.lessThan;
 
 
-public class PetStoreApi {
+public class PetStoreApiTest {
     //findbystatus url
     final String endpoint = "https://petstore3.swagger.io/api/v3/pet/findByStatus";
 
@@ -24,7 +24,7 @@ public class PetStoreApi {
     Gson gson = new Gson();
 
     //default constructor
-    public PetStoreApi(){
+    public PetStoreApiTest(){
 
     }
 
@@ -70,7 +70,7 @@ public class PetStoreApi {
 
     @Test
     //As a user i would like to validate the response time of findbystatus endpoint via a get request
-    public  void validateResponseTime(){
+    public  void testResponseTime(){
 
         given()
                 .queryParam("status","available")
@@ -86,7 +86,7 @@ public class PetStoreApi {
 
     @Test
     //As a user i would like to validate the response code of findbystatus endpoint via a get request
-    public void validateResponseCode(){
+    public void testResponseCode(){
         given()
                 .queryParam("status","available")
                 .contentType(ContentType.JSON)
@@ -102,21 +102,21 @@ public class PetStoreApi {
 
     @Test
     //As a user i would like to retrieve all pets in Lions category with a status of available
-    public void findPetByStatusAvailable() {
+    public void testfindPetByStatusAvailable() {
         Response responsePets = makeRequest("available", endpoint);
         Log(getLions(responsePets));
     }
 
     @Test
     //As a user i would like to retrieve all pets in Lions category with a status of pending
-    public void findPetByStatusPending() {
+    public void testfindPetByStatusPending() {
         Response responsePets = makeRequest("pending", endpoint);
         Log(getLions(responsePets));
     }
 
     @Test
     //As a user i would like to retrieve all pets in Lions category with a status of sold
-    public void findPetByStatusSold() {
+    public void testfindPetByStatusSold() {
         Response responsePets = makeRequest("sold", endpoint);
         Log(getLions(responsePets));
 

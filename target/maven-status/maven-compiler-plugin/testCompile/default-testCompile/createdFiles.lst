@@ -1,0 +1,5 @@
+Entities/Tag.class
+Entities/Pet.class
+unitTests/PestStoreTest.class
+Entities/Category.class
+petStore/PetStoreApiTest.class
