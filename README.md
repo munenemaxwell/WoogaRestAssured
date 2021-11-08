@@ -35,10 +35,10 @@ This assignment has been done using the following tools. <br/>
 
 
 **How to execute Source Code.** <br/>
-    1. Clone source code 
-    2. Navigate to the root directory where the pom.xml is contained
-    3. Run mvn clean test .This will clean the target directory and rebuild & run both unit tests and the rest assured API tests.A Build success means all tests have passed .
-    4. Navigate to target/site/jacoco/index.html with a browser to have a view of the code coverage report
+    1. Clone source code  <br/>
+    2. Navigate to the root directory where the pom.xml is contained <br/>
+    3. Run mvn clean test .This will clean the target directory and rebuild & run both unit tests and the rest assured API tests.A Build success means all tests have passed . <br/>
+    4. Navigate to target/site/jacoco/index.html with a browser to have a view of the code coverage report <br/>
     
 
 **Improvements.**<br/>
