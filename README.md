@@ -1,4 +1,4 @@
-# WoogaRestAssured
+# Documentation
 Test automation of https://petstore3.swagger.io/api/v3/pet/findByStatus as part of Wooga interview task. <br/>
 **Test Automation Framework**.<br/> 
 This assignment has been done using the following tools. <br/>
