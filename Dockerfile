@@ -1,5 +1,7 @@
 FROM maven:3.6.0-jdk-11-slim 
-COPY src /home/app/src
-COPY pom.xml /home/app
-ENTRYPOINT ["mvn","-f","/home/app/pom.xml" ,"clean","test"]
+WORKDIR /app
+COPY src /app/src
+COPY pom.xml /app
+CMD ["mvn","-f","/app/pom.xml" ,"clean","test"]
+VOLUME  ["/app"]
 
